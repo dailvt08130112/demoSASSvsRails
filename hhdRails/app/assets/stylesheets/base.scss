@@ -90,10 +90,12 @@
 /*IMAGES*/
 .banner {
   overflow: hidden;
-  background: url(../../../assets/images/slideshow/khe.jpg)
+  //background: url(../../../assets/images/slideshow/khe.jpg);
+  background: $green-standard asset-url('slideshow/khe.jpg') center center no-repeat;
 }
 .agency {
-  background: $green-standard url(../../../assets/images/bg_abstract.svg) center center no-repeat;
+  //background: $green-standard url(../../../assets/images/bg_abstract.svg) center center no-repeat;
+  background: $green-standard asset-url('bg_abstract.svg') center center no-repeat;
 }
 /**************************
 *
@@ -101,6 +103,36 @@
 *
 **************************/
 .pattern_1 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay1.png') repeat;
+}
+.pattern_2 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay2.png') repeat;
+}
+.pattern_3 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay3.png') repeat;
+}
+.pattern_4 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay4.png') repeat;
+}
+.pattern_5 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay5.png') repeat;
+}
+.pattern_6 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay6.png') repeat;
+}
+.pattern_7 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay7.png') repeat;
+}
+.pattern_8 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay8.png') repeat;
+}
+.pattern_9 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay9.png') repeat;
+}
+.pattern_10 .camera_overlayer {
+  background: asset-url('slideshow/patterns/overlay10.png') repeat;
+}
+/*.pattern_1 .camera_overlayer {
     background: url(../../../assets/images/slideshow/patterns/overlay1.png) repeat;
 }
 .pattern_2 .camera_overlayer {
@@ -129,4 +161,4 @@
 }
 .pattern_10 .camera_overlayer {
     background: url(../../../assets/images/slideshow/patterns/overlay10.png) repeat;
-}
+}*/
