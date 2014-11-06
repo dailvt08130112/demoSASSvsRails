@@ -13,17 +13,6 @@
  * require_tree .
  * require_self
 
- 
- 
- 
- * require variables.scss
- * require mixins.scss
- * require placeholders.scss
- 
- * require reset.scss
- * require layoutBootstrap.scss
- * require base.scss
- 
  *= require style
 
  */
