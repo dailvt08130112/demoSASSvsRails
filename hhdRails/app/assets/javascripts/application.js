@@ -11,6 +11,17 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// require jquery_ujs
+// require turbolinks
+// require_tree .
+
+//= require jquery-ui
+//= require jquery-migrate-1.2.1.js
+//= require jquery.mousewheel.js
+//= require jquery.mobile.customized.min.js
+//= require jquery.easing.1.3.js
+//= require camera.js
+//= require jquery.kwicks.js
+//= require video.js
+//= require main.js
+

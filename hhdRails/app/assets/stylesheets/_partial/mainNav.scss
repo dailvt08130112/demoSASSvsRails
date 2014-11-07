@@ -86,6 +86,7 @@
     &{
       border:none;
       top: -40px;
+      margin-bottom: -35px;
       //menu
       ul {
         display: none;
@@ -148,6 +149,7 @@
         font-size: 1.725em;
         color: $green-standard;
         text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+        line-height: 1.3;
         &.icon-th-list:before{
           float:right;
           line-height: 1.2em;
@@ -160,7 +162,7 @@
           border-radius: 2px;
           text-align: center;
           margin-right: 5px;
-          @include box-sizing(border-box);
+          //@include box-sizing(border-box);
         }
         &:hover, &.active{
           opacity: 0.7;

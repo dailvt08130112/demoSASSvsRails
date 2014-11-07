@@ -3,7 +3,7 @@
     Author     : LVTD
 */
 
-/*@font-face {
+@font-face {
   font-family: 'VNFDaxRegular';
   src: asset-url('fonts/vnf-dax.eot');
   src: asset-url('fonts/vnf-dax.eot?#iefix') format('embedded-opentype'),
@@ -26,10 +26,10 @@
     asset-url('fonts/utm-fkt-b.woff') format('woff'),
     asset-url('fonts/utm-fkt-b.ttf') format('truetype'),
     asset-url('fonts/utm-fkt-b.svg#UTMFacebookK&TBold') format('svg');
-}*/
+}
 
 /*for pure HTML*/
-@font-face {
+/*@font-face {
   font-family: 'VNFDaxRegular';
   src: url('../fonts/vnf-dax.eot');
   src: url('../fonts/vnf-dax.eot?#iefix') format('embedded-opentype'),
@@ -52,7 +52,7 @@
     url('../fonts/utm-fkt-b.woff') format('woff'),
     url('../fonts/utm-fkt-b.ttf') format('truetype'),
     url('../fonts/utm-fkt-b.svg#UTMFacebookK&TBold') format('svg');
-}
+}*/
 
 $green-standard: #229900;//#6fa112
 $green-standard-hover: #A9E797;

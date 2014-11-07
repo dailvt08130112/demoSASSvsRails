@@ -3,6 +3,8 @@
 
 // Clearfix
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
+// @include box-sizing(content-box);
+
 @mixin clearfix() {
     &:before,
         &:after {
