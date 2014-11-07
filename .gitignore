@@ -1,4 +1,6 @@
 htmlsource/.sass-cache/**
+htmlsource/nbproject/**
+htmlsource/node_modules/**
 htmlsource/srctemp/**
 mailsv_id_rsa
 mailsv_id_rsa.pub
