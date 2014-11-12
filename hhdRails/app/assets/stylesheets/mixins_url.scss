@@ -3,7 +3,7 @@
 
 @mixin font-face($name, $url-eot, $url-woff, $url-ttf, $url-svg, $weight, $style){
   // for pure sass
-  @font-face {
+  /* @font-face {
     font-family: $name;
     src: url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-eot}');
     src: url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-eot}#iefix') format('embedded-opentype'),
@@ -12,10 +12,10 @@
       url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-svg}') format('svg');
     font-weight: $weight;
     font-style: $style;
-  }
+  }*/
 
   // for rails
-  /*  @font-face {
+   @font-face {
       font-family: $name;
       src: asset-url('fonts/'+$url-eot);
       src: asset-url('fonts/'+$url-eot+'#iefix') format('embedded-opentype'),
@@ -24,7 +24,7 @@
         asset-url('fonts/'+$url-svg) format('svg');
       font-weight: $weight;
       font-style: $style;
-    }*/
+    }
 }
 @mixin background($color, $image, $posX, $posY, $repeat, $attachment){
   // Default
@@ -33,7 +33,7 @@
   // attachment : scroll  -- scroll|fixed|local|initial|inherit
   
   // for pure sass
-  background: $color url('../../hhdRails/app/assets/images/#{$image}') $posX $posY $repeat $attachment;
+  // background: $color url('../../hhdRails/app/assets/images/#{$image}') $posX $posY $repeat $attachment;
   // for rails
-  // background: $color asset-url($image) $posX $posY $repeat $attachment;
+   background: $color asset-url($image) $posX $posY $repeat $attachment;
 }
