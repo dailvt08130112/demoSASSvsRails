@@ -1,0 +1,113 @@
+// asset-url
+// @include background($color, $image, $posX, $posY, $repeat, $attachment)
+
+@mixin font-face($name, $url-eot, $url-woff, $url-ttf, $url-svg, $weight, $style){
+  // for pure sass
+  @font-face {
+    font-family: $name;
+    src: url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-eot}');
+    src: url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-eot}#iefix') format('embedded-opentype'),
+      url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-woff}') format('woff'),
+      url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-ttf}') format('truetype'),
+      url('../../hhdRails/app/assets/stylesheets/fonts/#{$url-svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+
+  // for rails
+  /*  @font-face {
+      font-family: $name;
+      src: asset-url('fonts/'+$url-eot);
+      src: asset-url('fonts/'+$url-eot+'#iefix') format('embedded-opentype'),
+        asset-url('fonts/'+$url-woff) format('woff'),
+        asset-url('fonts/'+$url-ttf) format('truetype'),
+        asset-url('fonts/'+$url-svg) format('svg');
+      font-weight: $weight;
+      font-style: $style;
+    }*/
+}
+@mixin background($color, $image, $posX, $posY, $repeat, $attachment){
+  // Default
+  // color : transparent
+  // repeat : repeat   -- repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+  // attachment : scroll  -- scroll|fixed|local|initial|inherit
+  
+  // for pure sass
+  background: $color url('../../hhdRails/app/assets/images/#{$image}') $posX $posY $repeat $attachment;
+  // for rails
+  // background: $color asset-url($image) $posX $posY $repeat $attachment;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*grid system*/
+@mixin col($width,$media-width){
+  @media (min-width:$media-width+px) {
+    float:left;
+    width: percentage($width);
+    position: relative;
+  }
+}
+
+@mixin gradient-right-to-transparent($color){
+  background: $color; 
+  //background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, $color 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, $color));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, $color 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, $color 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, $color 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, $color 100%);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=$color, GradientType=1 );
+}
+@mixin  gradient-left-to-transparent($color){
+  background:  $color; 
+  //background: rgba(231,56,39,1);
+  background: -moz-linear-gradient(left, $color 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $color), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left, $color 0%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(left, $color 0%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(left, $color 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, $color 0%, rgba(255,255,255,0) 100%);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color, endColorstr='#ffffff', GradientType=1 );
+}
+// new
+@mixin vendorize($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+//co ve it dung
+@mixin linkTextOffscreen() {
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  font-size: 0;
+  text-align: start;
+}
+@mixin hoverActiveFocus($property, $value) {
+  &:hover, &:active, &:focus {
+    #{$property}: $value;
+  }
+}

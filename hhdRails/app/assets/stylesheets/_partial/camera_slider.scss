@@ -1,8 +1,47 @@
 /**************************
 *
-*	GENERAL
 * thêm pattern - là background đặt trên slider.
 * đặt ở camera_wrap
+*
+*	COLORS & SKINS & CAMERA
+*
+**************************/
+.pattern_1 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay1.png', 0%, 0%, repeat, scroll);
+}
+.pattern_2 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay2.png', 0%, 0%, repeat, scroll);
+}
+.pattern_3 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay3.png', 0%, 0%, repeat, scroll);
+}
+.pattern_4 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay4.png', 0%, 0%, repeat, scroll);
+}
+.pattern_5 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay5.png', 0%, 0%, repeat, scroll);
+}
+.pattern_6 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay6.png', 0%, 0%, repeat, scroll);
+}
+.pattern_7 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay7.png', 0%, 0%, repeat, scroll);
+}
+.pattern_8 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay8.png', 0%, 0%, repeat, scroll);
+}
+.pattern_9 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay9.png', 0%, 0%, repeat, scroll);
+}
+.pattern_10 .camera_overlayer {
+  @include background(transparent, 'slideshow/patterns/overlay10.png', 0%, 0%, repeat, scroll);
+}
+//.pattern_1 .camera_overlayer {
+//    background: url(../../../assets/images/slideshow/patterns/overlay1.png) repeat;
+// }
+/**************************
+*
+*	GENERAL
 *
 **************************/
 .camera_wrap a, .camera_wrap img, 

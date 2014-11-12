@@ -4,6 +4,7 @@
 */
 .agency{
   //background: $green-standard url(../../images/bg_abstract.svg) center center no-repeat;
+  @include background($green-standard, 'bg_abstract.svg', center, center, no-repeat, scroll);
   background-size: cover;
   @extend %clearfix;
   @extend %padding-top-section;
